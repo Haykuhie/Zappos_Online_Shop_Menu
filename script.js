@@ -6,114 +6,55 @@ const kids = document.querySelector('.kids');
 const departments = document.querySelector('.departments');
 const brands = document.querySelector('.brands');
 const sale = document.querySelector('.sale');
+const menuItemArray = ['drop1','drop2','drop3','drop4','drop5','drop6','drop7']
+const menuSpans = ['neww','women','men','kids','departments','brands','sale']
 
 
 //Event Listeners//
-neww.addEventListener('click', unhide1);
-women.addEventListener('click', unhide2);
-men.addEventListener('click', unhide3);
-kids.addEventListener('click', unhide4);
-departments.addEventListener('click', unhide5);
-brands.addEventListener('click', unhide6);
-sale.addEventListener('click', unhide7);
+neww.addEventListener('click', unhide);
+women.addEventListener('click', unhide);
+men.addEventListener('click', unhide);
+kids.addEventListener('click', unhide);
+departments.addEventListener('click', unhide);
+brands.addEventListener('click', unhide);
+sale.addEventListener('click', unhide);
+window.addEventListener('click', main);
 
 
 //functions
-function unhide1(){
-    document.querySelector('.drop1').style.visibility= 'visible';   
-
-    if(document.querySelector('.drop1').style.visibility= 'visible'){
-        neww.addEventListener('click', hide1);
-
-        function hide1(){
-            document.querySelector('.drop1').style.visibility= 'hidden'; 
-        }
-        
- }
- }
-
- function unhide2(){
-    document.querySelector('.drop2').style.visibility= 'visible';   
-
-    if(document.querySelector('.drop2').style.visibility= 'visible'){
-        women.addEventListener('click', hide2);
-
-        function hide2(){
-            document.querySelector('.drop2').style.visibility= 'hidden'; 
-        }
-        
- }
- }
-
- function unhide3(){
-    document.querySelector('.drop3').style.visibility= 'visible';   
-
-    if(document.querySelector('.drop3').style.visibility= 'visible'){
-        men.addEventListener('click', hide3);
-
-        function hide3(){
-            document.querySelector('.drop3').style.visibility= 'hidden'; 
-        }
-        
- }
- }
 
 
- function unhide4(){
-  document.querySelector('.drop4').style.visibility= 'visible';   
-
- if(document.querySelector('.drop4').style.visibility= 'visible'){
-    kids.addEventListener('click', hide4);
-
-    function hide4(){
-        document.querySelector('.drop4').style.visibility= 'hidden'; 
-    }
-    
- }
- }
-
-
-
- function unhide5(){
-    document.querySelector('.drop5').style.visibility= 'visible';   
-  
-   if(document.querySelector('.drop5').style.visibility= 'visible'){
-      departments.addEventListener('click', hide5);
-  
-      function hide5(){
-          document.querySelector('.drop5').style.visibility= 'hidden'; 
-      }
-      
-   }
-   }
-
-
-   function unhide6(){
-    document.querySelector('.drop6').style.visibility= 'visible';   
-  
-   if(document.querySelector('.drop6').style.visibility= 'visible'){
-      brands.addEventListener('click', hide6);
-  
-      function hide6(){
-          document.querySelector('.drop6').style.visibility= 'hidden'; 
-      }
-      
-   }
-   }
-
-   function unhide7(){
-    document.querySelector('.drop7').style.visibility= 'visible';   
-  
-    if(document.querySelector('.drop7').style.visibility= 'visible'){
-       sale.addEventListener('click', hide7);
+function unhide(event){
    
-       function hide7(){
-           document.querySelector('.drop7').style.visibility= 'hidden'; 
-       }
-       
+    if(event.target = neww){
+      document.getElementById(menuItemArray[0]).style.visibility= 'visible';
     }
+    if(event.target = women){
+      document.getElementById(menuItemArray[1]).style.visibility= 'visible';
    }
+   if(event.target = men){
+      document.getElementById(menuItemArray[2]).style.visibility= 'visible';
+   }
+   if(event.target = kids){
+      document.getElementById(menuItemArray[3]).style.visibility= 'visible';
+   }
+   if(event.target = departments){
+      document.getElementById(menuItemArray[4]).style.visibility= 'visible';
+   }
+   if(event.target = brands){
+      document.getElementById(menuItemArray[5]).style.visibility= 'visible';
+   }
+   if(event.target = sale){
+      document.getElementById(menuItemArray[6]).style.visibility= 'visible';
+   }
+}
 
 
 
+function main(){
+   document.getElementsByClassName('drop').style.visibility= 'hidden';
+}
   
+  
+
+

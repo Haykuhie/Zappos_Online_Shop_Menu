@@ -85,8 +85,9 @@ border-bottom: 2px solid #003953;
     display:flex;
     transition:0.5s;
 }
-.drop1{
+#drop1{
    visibility:hidden;
+   
 }
 .brd{
     border-right:1px solid #DDDDDD;
@@ -147,7 +148,7 @@ border-bottom: 2px solid #003953;
     display:flex;
 }
 
-.drop2{
+#drop2{
     width:100vw;
     height:140vh;
     
@@ -190,7 +191,6 @@ button:hover{
 .search{
     width:200px;
     height:40%;
-    background:green;
     margin-left:50px;
     margin-top:40px;
 }
@@ -207,20 +207,24 @@ button:hover{
     margin-left:-20px;
 }
 
-.drop2 {
+#drop2 {
     visibility:hidden;
+   
 }
 
-.drop3{
+#drop3{
     margin-left:-100px;
     visibility:hidden;
+    width:85vw;
+    height:110vh;
 }
 
-.drop4{
+#drop4{
     margin-left:-150px;
     width:1000px;
     height:120vh;
     visibility:hidden;
+ 
 }
 
 .big{
@@ -236,7 +240,7 @@ button:hover{
     background-size:cover;
 }
 
-.drop5{
+#drop5{
     margin-left:-200px;
     width:1000px;
     height:120vh;
@@ -251,12 +255,13 @@ button:hover{
     background-image: url(8.jpg);
     background-size:cover;
 }
-.drop6{
+#drop6{
  width:600px;
  visibility:hidden;
+
 }
 .brands{
-   width: 500px;
+   width: 540px;
    flex-direction: column;
    height:40vh;
    
@@ -328,9 +333,10 @@ button:hover{
     width:20px;
     height:20px;
 }
-.drop7{
+#drop7{
     margin-left:-250px;
     visibility:hidden;
+    width:70vw;
 }
 .sale1{
     background-image: url(9.jpg);
@@ -343,6 +349,6 @@ button:hover{
 
 .greyBackground{
     width:100%;
-    height:100vh;
+    height:150vh;
     background:#F4F4F4;
 }

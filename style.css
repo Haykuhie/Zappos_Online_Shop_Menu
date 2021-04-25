@@ -48,7 +48,7 @@ body{
     border-bottom: 2px solid #003953;
 }
 
-#menu1{
+.menu1{
     list-style: none;
     margin:auto 10px;
     color:#003953;
@@ -57,11 +57,11 @@ body{
     
 }
 
-#menu1:hover{
+.menu1:hover{
 border-bottom: 2px solid #003953;
 
 }
-#menu1::after {
+.menu1::after {
     content:'';
     position:absolute;
     margin:auto 3px;
@@ -84,11 +84,10 @@ border-bottom: 2px solid #003953;
     padding:15px;
     display:flex;
     transition:0.5s;
-}
-#drop1{
    visibility:hidden;
-   
+     
 }
+
 .brd{
     border-right:1px solid #DDDDDD;
 }
@@ -148,11 +147,7 @@ border-bottom: 2px solid #003953;
     display:flex;
 }
 
-#drop2{
-    width:100vw;
-    height:140vh;
-    
-}
+
 .womenUL{
     width: 180px;
 }
@@ -207,14 +202,9 @@ button:hover{
     margin-left:-20px;
 }
 
-#drop2 {
-    visibility:hidden;
-   
-}
 
 #drop3{
     margin-left:-100px;
-    visibility:hidden;
     width:85vw;
     height:110vh;
 }
@@ -223,8 +213,6 @@ button:hover{
     margin-left:-150px;
     width:1000px;
     height:120vh;
-    visibility:hidden;
- 
 }
 
 .big{
@@ -244,7 +232,6 @@ button:hover{
     margin-left:-200px;
     width:1000px;
     height:120vh;
-    visibility:hidden;
 }
 
 .dep1{
@@ -257,8 +244,6 @@ button:hover{
 }
 #drop6{
  width:600px;
- visibility:hidden;
-
 }
 .brands{
    width: 540px;
@@ -335,7 +320,6 @@ button:hover{
 }
 #drop7{
     margin-left:-250px;
-    visibility:hidden;
     width:70vw;
 }
 .sale1{
@@ -352,3 +336,6 @@ button:hover{
     height:150vh;
     background:#F4F4F4;
 }
+.show {
+    visibility:visible;
+  }
